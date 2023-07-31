@@ -3,25 +3,15 @@
     padding: 0;
 }
 :root {
-    --first-color:#222;
-    --second-color:#fff;
-    --third-color:#111;
-    --fourth-color:#000;
-    --fifth-color: #3f3fac;
-    --six-color: #6666ec;
-    --sev-col:#fff
-}
-.dark-theme {
-    --first-color:#eee;
+        --first-color:#eee;
     --second-color:#222;
     --third-color:#ccc;
     --fourth-color:#ddd;
     --fifth-color: #222;
     --six-color:#111;
     --sev-col:#000
-
-
 }
+
 body {
     background-color: var(--first-color);
     color: var(--second-color);
