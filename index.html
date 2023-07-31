@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="crud">
+      <div class="header">
+        <div class="hold">
+          <h2>crud</h2>
+          <div id="night"><img src="night-mode-1.png" alt="" /></div>
+        </div>
+        <p>product management system</p>
+      </div>
+
+      <div class="inputs">
+        <input type="text" placeholder="title" id="title" />
+        <div class="prices">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="price"
+            id="price"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="taxes"
+            id="taxes"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="ads"
+            id="ads"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="discount"
+            id="discount"
+          />
+          <small id="total"></small>
+        </div>
+        <input type="number" placeholder="count" id="count" />
+        <input type="text" placeholder="category" id="category" />
+        <button class="submit" onclick="create()">create</button>
+      </div>
+
+      <div class="outputs">
+        <div class="search">
+          <input
+            type="text"
+            id="search"
+            placeholder="search"
+            onkeyup="searchData(this.value)"
+          />
+          <div id="btnsearch">
+            <button id="searchTitle" onclick="getSearchMode(this.id)">
+              search by title
+            </button>
+            <button id="searchCategory " onclick="getSearchMode(this.id)">
+              search by category
+            </button>
+          </div>
+        </div>
+        <button id="deleteAll" onclick="delAll()"></button>
+
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>category</th>
+                <th>total</th>
+                <th>update</th>
+                <th>delete</th>
+              </tr>
+            </thead>
+            <tbody class="aa"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
