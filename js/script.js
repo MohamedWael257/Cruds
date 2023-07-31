@@ -201,7 +201,4 @@ function searchData(value) {
   }
   document.querySelector(".aa").innerHTML = table;
 }
-var icon = document.getElementById("night");
-icon.onclick = function () {
-  document.body.classList.toggle("dark-theme");
-};
+
